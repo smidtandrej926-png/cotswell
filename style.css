@@ -26,3 +26,5 @@ h1,h2,h3{overflow-wrap:anywhere}button:disabled{opacity:.5;cursor:not-allowed}
 
 /* COTSWELL crest and wordmark */
 .brand .brand-type{font-family:Georgia,"Times New Roman",serif;font-size:22px;font-weight:700;letter-spacing:.035em;line-height:1}.brand .brand-symbol{width:43px;height:43px;flex-shrink:0}.brand{gap:10px}@media(max-width:800px){.brand .brand-type{font-size:19px}.brand .brand-symbol{width:36px;height:36px}}@media(max-width:400px){.brand .brand-type{font-size:16px}.brand .brand-symbol{width:30px;height:30px}.brand{gap:7px}}
+/* Inactive contact controls */
+[aria-disabled="true"].button,[aria-disabled="true"]:not(button){pointer-events:none!important;cursor:default!important;}
