@@ -28,3 +28,10 @@ h1,h2,h3{overflow-wrap:anywhere}button:disabled{opacity:.5;cursor:not-allowed}
 .brand .brand-type{font-family:Georgia,"Times New Roman",serif;font-size:22px;font-weight:700;letter-spacing:.035em;line-height:1}.brand .brand-symbol{width:43px;height:43px;flex-shrink:0}.brand{gap:10px}@media(max-width:800px){.brand .brand-type{font-size:19px}.brand .brand-symbol{width:36px;height:36px}}@media(max-width:400px){.brand .brand-type{font-size:16px}.brand .brand-symbol{width:30px;height:30px}.brand{gap:7px}}
 /* Inactive contact controls */
 [aria-disabled="true"].button,[aria-disabled="true"]:not(button){pointer-events:none!important;cursor:default!important;}
+
+/* Comfortable reading width */
+.wrap{width:min(1160px,100%);padding-left:32px;padding-right:32px}
+.header-inner{max-width:1240px;gap:22px;padding-left:28px;padding-right:28px;flex-wrap:wrap}
+@media(min-width:801px){header nav{gap:14px;flex-wrap:wrap}header nav a{font-size:12px}header .button{display:none}.hero h1{font-size:clamp(54px,6vw,82px)}.split,.hero-bottom{gap:44px}.section-head,.steps li{gap:36px}}
+.prose{max-width:760px}.prose h2{font-size:clamp(26px,3vw,36px);line-height:1.2;letter-spacing:-.035em;margin:42px 0 20px}.prose p,.prose li{line-height:1.8}.section>.wrap>h1{max-width:100%;overflow-wrap:anywhere}
+@media(max-width:800px){.wrap{padding-left:22px;padding-right:22px}.header-inner{padding-left:22px;padding-right:22px}.prose h2{margin-top:32px}}
