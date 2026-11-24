@@ -35,3 +35,65 @@ h1,h2,h3{overflow-wrap:anywhere}button:disabled{opacity:.5;cursor:not-allowed}
 @media(min-width:801px){header nav{gap:14px;flex-wrap:wrap}header nav a{font-size:12px}header .button{display:none}.hero h1{font-size:clamp(54px,6vw,82px)}.split,.hero-bottom{gap:44px}.section-head,.steps li{gap:36px}}
 .prose{max-width:760px}.prose h2{font-size:clamp(26px,3vw,36px);line-height:1.2;letter-spacing:-.035em;margin:42px 0 20px}.prose p,.prose li{line-height:1.8}.section>.wrap>h1{max-width:100%;overflow-wrap:anywhere}
 @media(max-width:800px){.wrap{padding-left:22px;padding-right:22px}.header-inner{padding-left:22px;padding-right:22px}.prose h2{margin-top:32px}}
+
+/* COTSWELL daylight identity — November 2026 */
+:root{--paper:#fafbf9;--ink:#192b40;--muted:#4e6175;--line:#dce4ec;--accent:#235da5}
+body{background:var(--paper)}
+header{background:#fff;border-bottom:1px solid var(--line)}
+.brand{color:#183e6b}
+nav a[aria-current],nav a:hover,.text-link{color:#235da5}
+h1,h2,h3{overflow-wrap:normal;word-break:normal;hyphens:none;text-wrap:balance}
+h1,h2{letter-spacing:-.045em}
+.hero{border:0;padding-top:65px;padding-bottom:70px;background:linear-gradient(120deg,#f0f6fc 0%,#fafbf9 75%)}
+.hero h1{max-width:1000px}.outline{color:#235da5}
+.hero-index{display:none}.hero-bottom{grid-template-columns:1fr}.hero-bottom>div{max-width:780px}
+.button{background:#235da5;border-color:#235da5;border-radius:8px;box-shadow:none;transition:background .2s,transform .2s}
+.button:hover{background:#17477e;transform:translateY(-2px);box-shadow:0 6px 18px #183e6b20}
+.button[aria-disabled=true]{background:#e3eaf2;border-color:#d4dfeb;color:#52657a}
+.button span[aria-hidden=true]{display:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline-color:#235da5}
+.intro{background:#eef4fa;border-bottom:1px solid #dce4ec}
+.ticker{background:#e7eff8;border:0;color:#183e6b;padding:24px 0}.ticker span{color:#6987aa}
+.section-head{border-top:0;padding-top:0}.section-head .eyebrow{color:#235da5}
+.eyebrow{font-size:14px;letter-spacing:.06em}
+.gray{background:#edf3f8}
+.dark{background:#eaf1f8;color:#192b40;border-color:#d6e1ec}
+.dark p,.dark dd,.dark li,.dark .eyebrow,.dark .number{color:#4e6175}
+.dark .cards,.dark .cards article,.dark .note{border-color:#dce4ec}
+.cards{gap:22px;border:0}
+.cards article{background:#fff;border:1px solid #dce4ec;border-radius:12px;padding:30px;box-shadow:0 5px 20px #183e6b05}
+.cards article p{font-size:16px}
+.number{color:#235da5;margin-bottom:25px;font-size:14px}
+.service-links{border-color:#cbd9e7}
+.service-links a{border-color:#cbd9e7;border-radius:6px;transition:background .2s}
+.service-links a:hover{background:#fff;color:#235da5}
+.service-links a span{color:#526a83}.service-links b{color:#235da5}
+.timeline article{border-color:#235da5}.timeline strong{color:#235da5}
+.steps li>span{color:#5b83b2}.steps li{border-color:#dce4ec}
+.catalog{border:0;gap:24px}
+.catalog-item{background:#fff;border:1px solid #dce4ec;border-radius:12px;overflow:hidden;box-shadow:0 6px 24px #183e6b06}
+.catalog-item:hover{background:#f5f9fd;border-color:#87a8cd}
+.catalog-more{border-color:#dce4ec;color:#235da5}
+.service-photo img{filter:none;background:#e7eef5}
+.scenario,.end,.reviews-notice{background:#edf3f8;border-color:#7396c0}
+.manifesto{color:#192b40}
+.review-card{background:#fff;border:1px solid #dce4ec;border-radius:12px}
+.review-rating{color:#235da5}
+.demo-form{background:#fff;border:1px solid #dce4ec;border-radius:12px}
+.form-banner{background:#edf3f8;border-color:#dce4ec;border-radius:6px}
+.fields input,.fields textarea,.fields select{background:#fff;border-color:#b5c6d8;border-radius:6px}
+.pay-rates>div{border-color:#7396c0}.pay-rates strong{color:#235da5}
+.pay-table thead{background:#235da5}.pay-table caption,.pay-table tfoot{background:#e4edf7}
+.pay-table th,.pay-table td,.table-scroll{border-color:#d6e1ec}
+.geography-map{background:#edf4fa;border-color:#d6e1ec;border-radius:12px}
+.map-land{fill:#b6cbe0;stroke:#7896b5}.map-point{fill:#235da5}.map-selection{color:#183e6b;border-color:#b6cbe0}
+.city-list{background:#d6e1ec;border-color:#d6e1ec}
+.city-list button{background:#fff;color:#192b40;font-size:14px}
+.city-list button:hover,.city-list button[aria-pressed=true]{background:#235da5;color:#fff}
+footer{background:#172d46;color:#f2f6fb}
+.footer-top p,.footer-bottom{color:#c3d1e1}
+.footer-nav{border-color:#3c526b;font-size:14px}.footer-bottom{font-size:13px}
+.faq details[open]{background:#eef4fa}.faq summary{padding-left:14px;padding-right:14px}.faq details p{padding-left:14px;padding-right:14px}
+@media(min-width:1201px){header nav a{font-size:14px}}
+@media(max-width:800px){.hero{padding-top:35px;padding-bottom:45px}.cards{gap:16px}.cards article{padding:24px}.eyebrow{font-size:13px}.catalog{gap:18px}.section-head h2{overflow-wrap:normal;font-size:clamp(28px,7vw,37px)}}
+@media(prefers-reduced-motion:no-preference){.catalog-item{transition:background .2s,border-color .2s}.faq details[open] p{animation:cotswell-in .25s ease-out}@keyframes cotswell-in{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}}
