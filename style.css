@@ -106,3 +106,20 @@ footer{background:#172d46;color:#f2f6fb}
 .intro .career-photo{margin:32px 0 0;max-width:740px}.intro .career-photo img{height:280px}
 .catalog-item .service-photo{flex-shrink:0}.service-photo img{object-position:center}
 @media(max-width:700px){.career-photo img{height:190px}.intro .career-photo img{height:210px}}
+
+/* Quiet shield frame */
+body:has(.edge-art){background:#edf3f8}
+body:has(.edge-art) main{position:relative;z-index:1;max-width:1040px;margin:0 auto;background:#fafbf9;border-left:1px solid #d4e1ed;border-right:1px solid #d4e1ed;min-height:60vh}
+body:has(.edge-art) footer{position:relative;z-index:2}
+.edge-art{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.edge-shield{position:absolute;top:170px;width:max(0px,calc((100vw - 1040px)/2));height:560px;overflow:hidden}
+.edge-left{left:0}.edge-right{right:0}
+.edge-shield svg{position:absolute;width:320px;height:520px;top:0}
+.edge-left svg{right:24px}.edge-right svg{left:24px}
+.shield-outline{stroke:#cbddec;stroke-width:1.2}
+.shield-glint{stroke:#769ebf;stroke-width:1.8;stroke-dasharray:12 88;stroke-dashoffset:0;opacity:0;animation:shield-pass 5s ease-in-out 1}
+@keyframes shield-pass{0%{opacity:0;stroke-dashoffset:100}20%,75%{opacity:.55}100%{opacity:0;stroke-dashoffset:0}}
+.company-history .prose{max-width:900px;margin-left:0}
+.company-history .prose h1{font-size:clamp(36px,4.3vw,58px);line-height:1.12;max-width:900px;margin-bottom:32px}
+@media(max-width:1200px){.edge-art{display:none}body:has(.edge-art) main{border-left:0;border-right:0}}
+@media(prefers-reduced-motion:reduce){.shield-glint{animation:none;opacity:0}}
